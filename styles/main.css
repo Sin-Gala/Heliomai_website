@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
 }
 
 html {
@@ -16,4 +18,194 @@ html {
     color: black;
     text-align: justify;
     text-align-last: center;
+}
+
+body{
+    margin: auto;
+    min-height: 100vh;
+}
+
+h2{
+    padding: 15px 0px 5px 20px;
+}
+
+h5{
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px 0px 10px 20px;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+/* ASIDE */
+
+aside{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-bottom: dashed 1px black;
+}
+
+.aside_section{
+    display: flex;
+    flex-direction: column;
+}
+
+    .aside_section p {
+        padding: 0px 20px 10px 20px;
+        text-align: justify;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .photo{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .mini_headers{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+/* CENTRE */
+
+.center {
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.center article{
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.propose_soins {
+    display: flex;
+    flex-direction: column;
+    border-bottom: dashed 1px black;
+    padding-bottom: 20px;
+}
+
+    .propose_soins .lists, .new_soins .articles {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+        .propose_soins .lists ul {
+            margin: auto;
+            list-style-position: inside;
+            list-style-type: "\1F338";
+        }
+
+            .propose_soins .lists ul li a {
+                text-decoration: none;
+                color: purple;
+                font-size: 12px;
+                line-height: 25px;
+                transition: all 0.5s ease;
+            }
+
+                .propose_soins .lists ul li a:hover {
+                    text-decoration: underline;
+                    color: #2d022d;
+                }
+
+    .propose_soins a {
+        text-decoration: none;
+        text-align: right;
+        padding: 20px 0px 0px 0px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2d022d;
+        transition: all 0.5s ease;
+    }
+
+    .propose_soins a:hover{
+        color: purple;
+    }
+
+    .disclaimer{
+        width: 80%;
+        margin: auto;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: justify;
+        font-style: italic;
+    }
+    
+     .disclaimer_bis{
+        width: 80%;
+        margin: auto;
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+    .disclaimer .center_text{
+        font-weight: normal;
+        text-align: right;
+    }
+
+    .contact_infos{
+        padding: 25px;
+    }
+
+    .contact_infos h2 {
+        padding-bottom: 25px;
+    }
+
+    .red{
+        color: purple;
+        font-weight: bold;
+    }
+
+@media only screen and (min-width: 600px)
+{
+    .propose_soins .lists, .new_soins .articles {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 950px)
+{
+    main{
+        flex-direction: row;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding-bottom: 0px;
+        margin-bottom: auto;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    body{
+        width: 80%;
+    }
+
+    .propose_soins .lists, .new_soins .articles {
+        width: 90%;
+    }
 }

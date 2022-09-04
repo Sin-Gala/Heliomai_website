@@ -31,13 +31,13 @@ function checkBrowserLanguage() {
 }
 
 function saveLanguagePref(langSelected) {
-    localStorage.setItem('selectedLanguage', langSelected);
+    localStorage.setItem('selectedLanguage_heliomai', langSelected);
 }
 
 function loadLanguagePref() {
 
-    if (localStorage.getItem('selectedLanguage')) {
-        var langSaved = localStorage.getItem('selectedLanguage');
+    if (localStorage.getItem('selectedLanguage_heliomai')) {
+        var langSaved = localStorage.getItem('selectedLanguage_heliomai');
 
         changeLanguage(langSaved);
     }

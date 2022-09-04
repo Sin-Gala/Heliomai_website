@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+
+
+/* LOGO */
+.logoHeliomai{
+    margin: auto;
+    margin-left: 0px;
+
+    width: 20%;
+}
+
+/* NAVIGATION MENU */
+.menu{
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(35, 33, 33, 0.1) 0px 5px;
+    border: solid antiquewhite 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .menu ul {
+        list-style-type: none;
+        list-style-position: inside;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 10px;
+    }
+
+        .menu ul li {
+            text-align: center;
+            margin: auto;
+        }
+
+            .menu ul li a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #666;
+                padding: 5px 20px;
+                border-radius: 25px;
+                transition: all 0.5s ease;
+            }
+
+            .menu ul li a:hover, .menu ul li .currentLinkMenuNav{
+                color: black;
+                background-color: #e4f1f0;
+            }
+    

@@ -18,27 +18,74 @@
     <!-- https://realfavicongenerator.net/ -->
 
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 
     <title>Heliomaí</title>
 </head>
 
-<body>
+<!-- FRANCAIS -->
+<body class="lang fr">
     <header>
-        <!-- LOGO + Title (top left) -->
-        <!-- Simple nav bar (opalios) -->
+        <!-- LOGO -->
+
+        <a href="index.html" class="logoHeliomai">
+            <img src="medias/main/opallios_logo.png" alt="Logo Heliomaí" />
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="currentLinkMenuNav">Accueil</a></li>
+                <li><a href="contact.html">Les Soins</a></li>
+                <li><a href="bonus.html">Bonus</a></li>
+                <li><a href="bonus.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- Small presentation + disclaimer -->
-        <!-- Latest offers + Most popular ones (?) -->
-        <!-- Join on Discord -->
-        <!-- Donation button -->
+        <!-- OUTILS DE TRAVAIL -->
+        <aside class="aside_section">
+            <h2>Qu'est-ce qu'Heliomaí ?</h2>
+
+            <p>PRESENTATION</p>
+        </aside>
+
+        <section class="center">
+            <!-- Les Pus Populaires -->
+            <article class="propose_soins">
+                <h2>Les Soins les plus popuaires</h2>
+                <div class="lists">
+                    <ul>
+                        <li><a href="soins/soin_lahochi.html">Soin LaHoChi</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- DISCLAIMER -->
+            <article class="disclaimer">
+                <p>Un soin énergétique n’est pas destiné à diagnostiquer ou à guérir quelque maladie que ce soit. Il ne te dispense en aucun cas de prendre ton traitement ou de consulter un médecin.</p>
+            </article>
+
+            <!-- DISCORD -->
+            <a href="https://www.facebook.com/OpalliosSoinsEnergetiques" target="_bank" rel="noopener noreferrer">
+                <img src="medias/socialmedias/discord.png" alt="Logo Discord" class="discord_logo">
+            </a>
+
+        </section>
+
+
     </main>
 
     <footer>
-        <!-- Mentions légales -->
+        <!-- COPYRIGHT -->
+        <a href="legal_notice.html" class="lang en">Legal Notice</a>
+        <a href="legal_notice.html" class="lang fr">Mentions légales</a>
+
+        <!-- LANGUAGE-->
     </footer>
 
-    <script defer src="language.js"></script>
+    <script defer src="scripts/language.js"></script>
 </body>
 </html>
