@@ -10,100 +10,10 @@
 html {
     width: 100vw;
     min-height: 100vh;
-    max-height: fit-content;
     overflow-x: hidden;
-    background-color: #ECCCB2;
+    background-color: #d4f4d3;
     font-family: 'Architects Daughter', cursive;
     color: black;
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
 }
-
-/* Flexbox grid */
-body {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    height: 100vh;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 90%;
-    align-items: center;
-}
-
-/* Slots */
-.linksSlot {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: fit-content;
-    background-color: #C69169;
-    margin: 15px auto;
-    border-radius: 25px;
-    box-shadow: rgba(76, 39, 29, 0.2) 7px 10px;
-    transition: all 0.5s ease;
-    transform: scale(1);
-}
-
-    .linksSlot .linksSlotHeader {
-        margin: auto;
-        margin-bottom: 15px;
-        background-color: #4C271D; /* Dark color */
-        color: #ECCCB2; /* Same as main background */
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        height: 55px;
-        border-radius: 15px;
-        box-shadow: rgba(76, 39, 29, 0.1) 0px 5px;
-    }
-
-        .linksSlot .linksSlotHeader h3,
-        .linksSlot .linksSlotHeader h4{
-            margin: auto;
-        }
-
-        .linksSlot .linksSlotHeader h4{
-            font-style: italic;
-        }
-
-    .linksSlot .linksSlotTxt {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-bottom: 8px;
-        width: 85%;
-    }
-
-        .linksSlot .linksSlotTxt a {
-            margin: 5px auto;
-            transition: all 0.5s ease;
-            transform: scale(1);
-            text-decoration: none;
-            color: black;
-        }
-
-        .linksSlot .linksSlotTxt a:visited {
-            color: black;
-        }
-
-        .linksSlot .linksSlotTxt .linksSlotSocialMedias {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 10px auto;
-        }
-
-            .linksSlot .linksSlotTxt .linksSlotSocialMedias a {
-                width: 35px;
-                margin: auto;
-            }
-
-        .linksSlot:hover, .linksSlot .linksSlotTxt a:hover {
-            transform: scale(1.05);
-            backface-visibility: hidden;
-        }
