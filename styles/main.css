@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 * {
     padding: 0px;
@@ -7,22 +6,20 @@
     width: 100%;
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
+    color: black;
+    text-align: justify;
+    text-align-last: center;
 }
 
 html {
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #d4f4d3;
-    font-family: 'Architects Daughter', cursive;
-    color: black;
-    text-align: justify;
-    text-align-last: center;
+    background-color: #fff6e9;
 }
 
 body{
     margin: auto;
-    min-height: 100vh;
 }
 
 h2{
@@ -92,53 +89,12 @@ aside{
     margin-bottom: 25px;
 }
 
-.propose_soins {
+.main_box {
     display: flex;
     flex-direction: column;
     border-bottom: dashed 1px black;
     padding-bottom: 20px;
 }
-
-    .propose_soins .lists, .new_soins .articles {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        margin-top: 15px;
-        width: 100%;
-    }
-
-        .propose_soins .lists ul {
-            margin: auto;
-            list-style-position: inside;
-            list-style-type: "\1F338";
-        }
-
-            .propose_soins .lists ul li a {
-                text-decoration: none;
-                color: purple;
-                font-size: 12px;
-                line-height: 25px;
-                transition: all 0.5s ease;
-            }
-
-                .propose_soins .lists ul li a:hover {
-                    text-decoration: underline;
-                    color: #2d022d;
-                }
-
-    .propose_soins a {
-        text-decoration: none;
-        text-align: right;
-        padding: 20px 0px 0px 0px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #2d022d;
-        transition: all 0.5s ease;
-    }
-
-    .propose_soins a:hover{
-        color: purple;
-    }
 
     .disclaimer{
         width: 80%;
@@ -149,15 +105,6 @@ aside{
         font-style: italic;
     }
     
-     .disclaimer_bis{
-        width: 80%;
-        margin: auto;
-        margin-left: 20px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: justify;
-    }
-
     .disclaimer .center_text{
         font-weight: normal;
         text-align: right;
@@ -171,17 +118,19 @@ aside{
         padding-bottom: 25px;
     }
 
-    .red{
-        color: purple;
-        font-weight: bold;
+/* Discord Logo */
+.discord_logo {
+    width: 30px;
+}
+
+    .discord a img{
+        transition: all 0.8s ease;
+        transform: scale(1);
     }
 
-@media only screen and (min-width: 600px)
-{
-    .propose_soins .lists, .new_soins .articles {
-        flex-direction: row;
-    }
-}
+        .discord a img:hover {
+            transform: scale(1.1) perspective(1px);
+        }
 
 @media only screen and (min-width: 950px)
 {
@@ -203,9 +152,5 @@ aside{
 {
     body{
         width: 80%;
-    }
-
-    .propose_soins .lists, .new_soins .articles {
-        width: 90%;
     }
 }

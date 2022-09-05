@@ -15,7 +15,7 @@ header{
 }
 
 /* NAVIGATION MENU */
-.menu{
+.menu {
     margin: auto;
     margin-top: 20px;
     background-color: white;
@@ -46,11 +46,11 @@ header{
                 color: #666;
                 padding: 5px 20px;
                 border-radius: 25px;
-                transition: all 0.5s ease;
+                transition: all 1s ease;
             }
 
-            .menu ul li a:hover, .menu ul li .currentLinkMenuNav{
-                color: black;
-                background-color: #e4f1f0;
-            }
+                .menu ul li a:hover, .menu ul li .currentLinkMenuNav {
+                    color: black;
+                    background-color: #d6ffd4;
+                }
     

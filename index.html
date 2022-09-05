@@ -14,7 +14,6 @@
     <meta property="og:site_name" content="Heliomaí" />
 
     <!-- Google tag manager -->
-
     <!-- https://realfavicongenerator.net/ -->
 
     <link rel="stylesheet" href="styles/main.css" />
@@ -24,8 +23,7 @@
     <title>Heliomaí</title>
 </head>
 
-<!-- FRANCAIS -->
-<body class="lang fr">
+<body>
     <header>
         <!-- LOGO -->
 
@@ -34,45 +32,73 @@
         </a>
 
         <!-- NAVIGATION -->
-        <nav class="menu">
+        <nav class="menu lang fr">
             <ul>
                 <li><a href="index.html" class="currentLinkMenuNav">Accueil</a></li>
-                <li><a href="contact.html">Les Soins</a></li>
                 <li><a href="bonus.html">Bonus</a></li>
-                <li><a href="bonus.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="menu lang en">
+            <ul>
+                <li><a href="index.html" class="currentLinkMenuNav">Home</a></li>
+                <li><a href="bonus.html">Bonus</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- OUTILS DE TRAVAIL -->
-        <aside class="aside_section">
-            <h2>Qu'est-ce qu'Heliomaí ?</h2>
-
+        <aside class="aside_section lang fr">
+            <h2>Qui suis-je ?</h2>
+            <h4>Magnétiseuse énergéticienne</h4>
+            <br />
+            <p>PRESENTATION</p>
+        </aside>
+        <aside class="aside_section lang en">
+            <h2>Who am I?</h2>
+            <h4>Energy magnetizer</h4>
+            <br />
             <p>PRESENTATION</p>
         </aside>
 
         <section class="center">
-            <!-- Les Pus Populaires -->
-            <article class="propose_soins">
-                <h2>Les Soins les plus popuaires</h2>
-                <div class="lists">
-                    <ul>
-                        <li><a href="soins/soin_lahochi.html">Soin LaHoChi</a></li>
-                    </ul>
-                </div>
+            <!-- Le Soin d'Heliomaí -->
+            <article class="main_box lang fr">
+                <h2>Le Soin d'Heliomaí</h2>
+                <h4>Centrer, Ancrer, Harmoniser</h4>
+                <br />
+                <p>SOIN PRESENTATION</p>
             </article>
-
-            <!-- DISCLAIMER -->
-            <article class="disclaimer">
-                <p>Un soin énergétique n’est pas destiné à diagnostiquer ou à guérir quelque maladie que ce soit. Il ne te dispense en aucun cas de prendre ton traitement ou de consulter un médecin.</p>
+            <article class="main_box lang en">
+                <h2>Heliomaí's treatment</h2>
+                <h4>Centrer, Ancrer, Harmoniser</h4>
+                <br />
+                <p>SOIN PRESENTATION</p>
             </article>
 
             <!-- DISCORD -->
-            <a href="https://www.facebook.com/OpalliosSoinsEnergetiques" target="_bank" rel="noopener noreferrer">
-                <img src="medias/socialmedias/discord.png" alt="Logo Discord" class="discord_logo">
-            </a>
+            <article class="main_box discord lang fr">
+                <a href="https://www.facebook.com/OpalliosSoinsEnergetiques" target="_bank" rel="noopener noreferrer">
+                    <img src="medias/socialmedias/discord.png" alt="Logo Discord" class="discord_logo">
+                </a>
+                <p>Rejoins nous sur Discord !</p>
+            </article>
+            <article class="main_box discord lang en">
+                <a href="https://www.facebook.com/OpalliosSoinsEnergetiques" target="_bank" rel="noopener noreferrer">
+                    <img src="medias/socialmedias/discord.png" alt="Logo Discord" class="discord_logo">
+                </a>
+                <p>Join us on Discord!</p>
+            </article>
 
+            <!-- DISCLAIMER -->
+            <article class="disclaimer lang fr">
+                <p>Un soin énergétique n’est pas destiné à diagnostiquer ou à guérir quelque maladie que ce soit. Il ne te dispense en aucun cas de prendre ton traitement ou de consulter un médecin.</p>
+            </article>
+            <article class="disclaimer lang en">
+                <p>Energy healing is not intended to diagnose or cure any disease. It does not in any way exempt you from taking your treatment or consulting a doctor.</p>
+            </article>
         </section>
 
 
@@ -80,10 +106,16 @@
 
     <footer>
         <!-- COPYRIGHT -->
-        <a href="legal_notice.html" class="lang en">Legal Notice</a>
         <a href="legal_notice.html" class="lang fr">Mentions légales</a>
+        <a href="legal_notice.html" class="lang en">Legal notice</a>
+
+        <br />
 
         <!-- LANGUAGE-->
+        <select id="lang-switch" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
     </footer>
 
     <script defer src="scripts/language.js"></script>
