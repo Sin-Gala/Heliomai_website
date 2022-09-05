@@ -23,7 +23,7 @@ body{
 }
 
 h2{
-    padding: 15px 0px 5px 20px;
+    padding: 15px 0px 5px 0px;
 }
 
 h5{
@@ -132,8 +132,14 @@ aside{
             transform: scale(1.1) perspective(1px);
         }
 
-@media only screen and (min-width: 950px)
+/* Donation */
+#donate-button-container
 {
+    width: 80px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 950px) {
     main{
         flex-direction: row;
     }
